@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <link rel="icon" href="asset/LOGO ROMOKO-1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi Member Baru</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-image: url(asset/ROMOKO\ BG.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+        .container {
+            background-color: #000000c4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            border: red 3px solid;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        button {
+            background-color: #9e0505;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="color: white;">
+    <h2 style="text-align: center;">Registrasi Member Baru</h2>
+    <img src="asset/LOGO ROMOKO-1.png" alt="logo" style="display: block; margin: 0 auto 20px auto; width:100px; height:100px;">
+    <form>
+        <div class="form-group">
+            <label for="fullName">Nama Lengkap:</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Alamat:</label>
+            <textarea id="address" name="address" rows="4"></textarea>
+        </div>
+        <!-- <button type="submit">Registrasi</button> -->
+         <button type="submit" **onclick="alert('DATA ANDA BERHASIL DI SIMPAN')"**>Registrasi</button>
+    </form>
+    <footer style="margin-top: 20px; text-align: center; color: rgba(240, 255, 255, 0.408); font-size: 10px;">
+        <span>Property Of Romoko Bandung</span>
+    </footer>
+</div>
+</body>
+</html>
